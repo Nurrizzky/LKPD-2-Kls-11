@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rawr</title>
+    <title>No 2</title>
     <style>
         body {
             display: flex;
@@ -21,11 +21,11 @@
     <div class="container">
         <form action="" method="POST">
             <label for="lamaKerja">Lama Kerja : </label>
-            <input type="number" id="lamaKerja" name="lamaKerja" >
+            <input type="number" id="lamaKerja" name="lamaKerja" required >
             <br>
             <br>
             <label for="lebihJam">Lebih Jam : </label>
-            <input type="number" id="lebihJam" name="lebihJam">
+            <input type="number" id="lebihJam" name="lebihJam" required>
             <br>
             <br>
             <button type="submit" name="btn-submit">Kirim</button>

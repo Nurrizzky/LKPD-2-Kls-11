@@ -7,22 +7,22 @@
 </head>
 <body>
 
-<form action="" method="POST" >
-
-    <label for="text">Input Text</label>
-    <input type="text" id="text" name="text">
-    <button type="submit" name="btn">Cek</button>
-
-</form>
+    <form action="" method="POST" >
+    
+        <label for="text">Input Text</label>
+        <input type="text" id="text" name="text">
+        <button type="submit" name="btn">Cek</button>
+    
+    </form>
 
 <?php 
 
 if (isset($_POST['btn'])) {
 
     $inputText = $_POST['text'];
-    preg_match_all('/\d/', $inputText, $matches);
-        if (!empty($matches[0])) {
-            echo "Angka yang Ditemukan adalah : " . implode(",", $matches[0]);
+    preg_match_all('/\d/', $inputText, $result);
+        if (!empty($result[0])) {
+            echo "Angka yang Ditemukan adalah : " . implode(",", $result[0]);
         }else {
             echo "Angka tidak dapat ditemukan";
         }

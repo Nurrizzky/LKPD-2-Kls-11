@@ -32,6 +32,8 @@ if (isset($_POST['btn'])) {
 
     if ($hasil1 > $hasil2) {
         echo "$input1 Memiliki jumlah karakter lebih banyak dari $input2 : selesih $selisih Karakter";
+    }else if($hasil1 == $hasil2) {
+        echo "$input1 Memiliki jumlah karakter yang sama dengan $input2 : selesih $selisih Karakter";
     }else {
         echo "$input1 Memiliki jumlah karakter sedikit banyak dari $input2 : selesih $selisih Karakter";
     }
